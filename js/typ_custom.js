@@ -59,10 +59,24 @@ jQuery(document).ready(function($) {
 		$("#menu-container .content").slideUp('slow');
 		$("#menu-container .homepage").slideUp('slow');
 		$(".our-sec").slideDown('slow');
-	
 		return false;
 	});
-
+	$(".project-item a.ostrength").click(function(){
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+		$("#menu-container .content").slideUp('slow');
+		$("#menu-container .homepage").slideUp('slow');
+		$(".our-sec").slideDown('slow');
+		return false;
+	});
+	$(".project-item a.ovalues").click(function(){
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+		$("#menu-container .content").slideUp('slow');
+		$("#menu-container .homepage").slideUp('slow');
+		$(".our-sec").slideDown('slow');
+		return false;
+	});
 
 
 
