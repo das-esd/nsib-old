@@ -116,3 +116,18 @@ function loadScript() {
 	    };
 	    var map = new google.maps.Map(document.getElementById('map_canvas'),  mapOptions);
 	}
+
+
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+	var mynav = document.getElementById('mynav');
+  if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+    mynav.style.position = "fixed";
+	 
+  } else {
+    mynav.style.position = "relative";
+  }
+}
