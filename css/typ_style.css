@@ -89,6 +89,7 @@ a.toggle-nav {
     top: 0;
     right: 0;
     margin: 10px;
+    margin-top: 8px;
     width: 40px;
     height: 40px;
     background: #2417df94;
@@ -345,7 +346,7 @@ h2.welcome-title {
 }
 
 .story-bg {
-    background: url("../img/story-bg.jpg");
+   /* background: url("../img/story-bg.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
