@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-	$(".main-menu a").click(function(){
+/*	$(".main-menu a").click(function(){
 		var id =  $(this).attr('class');
 		id = id.split('-');
 		$('a.active').removeClass('active');
@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
 		$("#menu-container .contact-section").slideDown('slow');
 		loadScript();
 		return false;
-	});
+	}); */
 
 	$(".project-item a.omission").click(function(){
 		document.body.scrollTop = 0;
@@ -79,14 +79,6 @@ jQuery(document).ready(function($) {
 	});
 
 
-
-
-
-
-
-
-
-
 	$('a.toggle-nav').click(function(){
 		$('.menu-responsive').slideToggle();
 	});
@@ -100,22 +92,6 @@ jQuery(document).ready(function($) {
 
 });
 
-
-function loadScript() {
-	  var script = document.createElement('script');
-	  script.type = 'text/javascript';
-	  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-	      'callback=initialize';
-	  document.body.appendChild(script);
-	}
-
-	function initialize() {
-	    var mapOptions = {
-	      zoom: 15,
-	      center: new google.maps.LatLng(16.8496189,96.1288854)
-	    };
-	    var map = new google.maps.Map(document.getElementById('map_canvas'),  mapOptions);
-	}
 
 
 
